@@ -5,4 +5,5 @@
 /bower_components/
 /node_modules/
 /.v8flags.3.28.71.19.staff.json
+/.publish/
 /dist/
