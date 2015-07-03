@@ -1,0 +1,53 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600);
+
+span.mainword {
+  font-weight: bold;
+  font-size: larger;
+}
+.page {
+  background: $page-color;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+img.photo {
+  border-radius: em-calc(1000);
+  height: em-calc(100);
+}
+
+p.description {
+  margin-top: em-calc(30);
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.bordered {
+  border: em-calc(2) solid;
+}
+
+.competence{
+  margin-bottom: em-calc(2);
+}
+.competence-scale{
+
+  .columns {
+    border: 0, em-calc(2), em-calc(2), em-calc(2) solid;
+  }
+
+
+}
+
+
+@media print {
+  @for $i from 1 through $total-columns {
+    .medium-#{$i} {
+      width: percentage($i / $total-columns);
+    }
+
+    .medium-block-grid-#{$i} {
+      width: percentage($i / $total-columns);
+    }
+  }
+}

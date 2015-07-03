@@ -1,0 +1,8 @@
+$fi-path: $font-path;
+
+@import "foundation-icons";
+
+i.large {
+    font-size: em-calc(50);
+    line-height: em-calc(50);
+}
