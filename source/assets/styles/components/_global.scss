@@ -38,16 +38,3 @@ p.description {
 
 
 }
-
-
-@media print {
-  @for $i from 1 through $total-columns {
-    .medium-#{$i} {
-      width: percentage($i / $total-columns);
-    }
-
-    .medium-block-grid-#{$i} {
-      width: percentage($i / $total-columns);
-    }
-  }
-}

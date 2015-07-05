@@ -1,0 +1,38 @@
+@media print {
+
+  @include grid-html-classes($size:small);
+  @include block-grid-html-classes($size:small, $include-spacing: false);
+  @include grid-html-classes($size:medium);
+  @include block-grid-html-classes($size:medium, $include-spacing: false);
+  @include grid-html-classes($size:large);
+  @include block-grid-html-classes($size:large, $include-spacing: false);
+
+
+
+  body{
+    background: none;
+  }
+  .page
+  {
+    box-shadow: none;
+  }
+  @page {
+    size: A4;
+    margin:em-calc(10);
+  }
+
+  .alert-box {
+    padding: em-calc(3);
+  }
+
+//  @include align-classes();
+  .medium-text-left{
+    text-align: left !important;
+  }
+  .medium-text-center{
+    text-align: center !important;
+  }
+  .medium-text-right{
+    text-align: right !important;
+  }
+}
